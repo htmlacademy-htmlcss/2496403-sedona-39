@@ -2,6 +2,7 @@
 
 * Студент: [Валерия Мельникова](https://up.htmlacademy.ru/htmlcss/39/user/2496403).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Сайт: [Мой проект Седона](https://valerandium.github.io/2496403-sedona-39/)
 
 ---
 

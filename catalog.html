@@ -33,7 +33,7 @@
               <span class="notification-favorite">12</span></a>
           </li>
         </ul>
-        <a class="navigation-link-wanna-go-here" href="#">Хочу сюда!</a>
+        <a class="button button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="main-catalog">
@@ -77,7 +77,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group" title="Выберите тип жилья">
             <legend class="catalog-filter-title">Тип жилья</legend>
             <ul class="catalog-filter-list">
@@ -104,17 +103,17 @@
           <fieldset class="catalog-filter-group" title="Введите стоимость">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <ul class="catalog-filter-group-price">
-              <li class="catalog-filter-group-price-inputs">
-                <label class="catalog-filter-price-range"><input type="number" placeholder="0" min="0" max="9000"
+              <li class="catalog-filter-price-inputs">
+                <label class="catalog-filter-price-range"><input type="number" value="0" min="0"
                     name="min-price-interval">от</label>
-                <label class="catalog-filter-price-range"><input type="number" placeholder="9000" min="0" max="9000"
+                <label class="catalog-filter-price-range"><input type="number" value="9000" min="0"
                     name="max-price-interval">до</label>
               </li>
-              <li class="catalog-filter-group-price-slider">
-                <button class="catalog-filter-group-price-slider-button-min" type="button">
+              <li class="catalog-filter-price-slider">
+                <button class="catalog-filter-button-min" type="button">
                   <span class="visually-hidden">Нижняя граница стоимости</span>
                 </button>
-                <button class="catalog-filter-group-price-slider-button-max" type="button">
+                <button class="catalog-filter-button-max" type="button">
                   <span class="visually-hidden">Верхняя граница стоимости</span>
                 </button>
               </li>
@@ -134,7 +133,7 @@
         </select>
         <ul class="catalog-filter-results-view-buttons">
           <li class="catalog-filter-results-view-item">
-            <a href="#" class="catalog-filter-results-button-selected">
+            <a class="catalog-filter-results-button-item catalog-filter-results-button-item-selected" href="#">
               <span class="visually-hidden">Показать плиткой</span>
             </a>
           </li>
@@ -149,6 +148,125 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section class="catalog-cards">
+        <h2 class="visually-hidden">Список отелей</h2>
+        <ul class="catalog-cards-list">
+          <li class="catalog-cards-item">
+            <a class="card-link" href="#">
+              <img class="card-image" src="#" alt="Фото отеля Amara Resort & Spa">
+              <h3 class="card-title">Amara Resort & Spa</h3>
+              <p class="card-type-of-housing">Гостиница</p>
+            </a>
+            <p class="card-price">от 4000 ₽</p>
+            <p class="card-price-buttons">
+              <a class="button button-brown" href="#">Подробнее</a>
+              <a class="button button-blue" href="#">В избранное</a>
+            </p>
+            <div class="catalog-card-rating">
+              <p class="rating-star rating-star-four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+            </div>
+            <button class="button button-gray" type="button">Рейтинг:8,5</button>
+          </li>
+          <li class="catalog-cards-item">
+            <a class="card-link" href="#">
+              <img class="card-image" src="#" alt="Villas at Poco Diablo">
+              <h3 class="card-title">Villas at Poco Diablo</h3>
+              <p class="card-type-of-housing">Гостиница</p>
+            </a>
+            <p class="card-price">от 5000 ₽</p>
+            <p class="card-price-buttons">
+              <a class="button button-brown" href="#">Подробнее</a>
+              <a class="button button-green" href="#">В избранном</a>
+            </p>
+            <div class="catalog-card-rating">
+              <p class="rating-star rating-star-four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+            </div>
+            <button class="button button-gray" type="button">Рейтинг:9,2</button>
+          </li>
+          <li class="catalog-cards-item">
+            <a class="card-link" href="#">
+              <img class="card-image" src="#" alt="Фото отеля Desert Quail Inn">
+              <h3 class="card-title">Desert Quail Inn</h3>
+              <p class="card-type-of-housing">Гостиница</p>
+            </a>
+            <p class="card-price">от 2500 ₽</p>
+            <p class="card-price-buttons">
+              <a class="button button-brown" href="#">Подробнее</a>
+              <a class="button button-blue" href="#">В избранное</a>
+            </p>
+            <div class="catalog-card-rating">
+              <p class="rating-star rating-star-three">
+                <span class="visually-hidden">3 звезды</span>
+              </p>
+            </div>
+            <button class="button button-gray" type="button">Рейтинг:6,9</button>
+          </li>
+          <li class="catalog-cards-item">
+            <a class="card-link" href="#">
+              <img class="card-image" src="#" alt="Фото отеля GreenTree Inn">
+              <h3 class="card-title">GreenTree Inn</h3>
+              <p class="card-type-of-housing">Гостиница</p>
+            </a>
+            <p class="card-price">от 1500 ₽</p>
+            <p class="card-price-buttons">
+              <a class="button button-brown" href="#">Подробнее</a>
+              <a class="button button-blue" href="#">В избранное</a>
+            </p>
+            <div class="catalog-card-rating">
+              <p class="rating-star rating-star-two">
+                <span class="visually-hidden">2 звезды</span>
+              </p>
+            </div>
+            <button class="button button-gray" type="button">Рейтинг:5,0</button>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog-pagination">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link pagination-hidden" href="#">
+              <b class="visually-hidden">...</b>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+        <button class="button pagination-show-more" type="button">Показать ещё</button>
+      </section>
+      <section class="interested interested-catalog">
+        <h2 class="interested-title">Заинтересовались?</h2>
+        <p class="interested-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
+        <button class="interested-button" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscription-form-input-field">
+            <label class="visually-hidden" for="email">Введите ваш e-mail</label>
+            <input type="email" id="email" name="email-subscription" placeholder="Ваш e-mail" required>
+          </p>
+          <button class="subscription-form-button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="catalog-footer">

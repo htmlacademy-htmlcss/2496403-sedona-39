@@ -4,7 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <header class="main-header">
       <a href="index.html">
@@ -21,7 +23,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-selected" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-selected" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -38,7 +40,7 @@
         <a class="button button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="main-catalog">
+    <main class="main-catalog-filter">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -121,10 +123,11 @@
               </li>
             </ul>
           </fieldset>
-          <button class="catalog-filter-button-submit" type="submit">Применить</button>
-          <button class="catalog-filter-button-reset" type="reset">Сбросить</button>
+          <button class="button catalog-filter-button-submit" type="submit">Применить</button>
+          <button class="button catalog-filter-button-reset" type="reset">Сбросить</button>
         </form>
       </section>
+
       <section class="catalog-filter-results">
         <h2 class="catalog-filter-results-title">Найдено гостиниц: <span
             class="catalog-filter-results-title-quantity">38</span></h2>
@@ -156,7 +159,8 @@
         <ul class="catalog-cards-list">
           <li class="catalog-cards-item">
             <a class="card-link" href="#">
-              <img class="card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Фото отеля Amara Resort & Spa">
+              <img class="card-image" src="images/hotel-1.jpg" width="300" height="212"
+                alt="Фото отеля Amara Resort & Spa">
               <h3 class="card-title">Amara Resort & Spa</h3>
             </a>
             <p class="card-type-of-housing">Гостиница</p>
@@ -170,7 +174,7 @@
                 <span class="visually-hidden">4 звезды</span>
               </p>
             </div>
-            <p class="catalog-cards-rating">Рейтинг:8,5</p>
+            <p class="catalog-cards-rating">Рейтинг: 8,5</p>
           </li>
           <li class="catalog-cards-item">
             <a class="card-link" href="#">
@@ -188,11 +192,12 @@
                 <span class="visually-hidden">4 звезды</span>
               </p>
             </div>
-            <p class="catalog-cards-rating">Рейтинг:9,2</p>
+            <p class="catalog-cards-rating">Рейтинг: 9,2</p>
           </li>
           <li class="catalog-cards-item">
             <a class="card-link" href="#">
-              <img class="card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Фото отеля Desert Quail Inn">
+              <img class="card-image" src="images/hotel-3.jpg" width="300" height="212"
+                alt="Фото отеля Desert Quail Inn">
               <h3 class="card-title">Desert Quail Inn</h3>
             </a>
             <p class="card-type-of-housing">Гостиница</p>
@@ -206,7 +211,7 @@
                 <span class="visually-hidden">3 звезды</span>
               </p>
             </div>
-            <p class="catalog-cards-rating">Рейтинг:6,9</p>
+            <p class="catalog-cards-rating">Рейтинг: 6,9</p>
           </li>
           <li class="catalog-cards-item">
             <a class="card-link" href="#">
@@ -224,7 +229,7 @@
                 <span class="visually-hidden">2 звезды</span>
               </p>
             </div>
-            <p class="catalog-cards-rating">Рейтинг:5,0</p>
+            <p class="catalog-cards-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
       </section>
@@ -252,15 +257,15 @@
           </li>
         </ul>
       </section>
-      <section class="subscription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscription-catalog">
+        <h2 class="subscription-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="subscription-subtitle-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscription-form-input-field">
             <label class="visually-hidden" for="email">Введите ваш e-mail</label>
             <input type="email" id="email" name="email-subscription" placeholder="Ваш e-mail" required>
           </p>
-          <button class="subscription-form-button" type="submit">Подписаться</button>
+          <button class="button subscription-form-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -290,4 +295,5 @@
       </a>
     </footer>
   </body>
+
 </html>

@@ -1,0 +1,373 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/* Pages */
+
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+
+}
+
+.main-index {
+  background-image: url("../images/background-welcome-to-sedona.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* List */
+
+.city-description-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.city-description-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+/* Title */
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item-dark-blue-photo-after-text {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.advantages-item-light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-medium-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-dark-blue-photo-before-text {
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+.welcome-to-sedona-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.welcome-to-sedona-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.why-come-to-sedona-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
+
+.why-come-to-sedona-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+  text-align: center;
+}
+
+.why-come-to-sedona-item-light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.interested-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.interested-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.subscription{
+  background-image: url("../images/subscription.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+}
+.subscription-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.subscription-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.subscription-form {
+  font-family: inherit;
+  color: #000000;
+}
+
+.subscription-form-button {
+  background-color: #82b3d3;
+
+}
+
+.phone-number {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+
+}
+
+
+.main-catalog-filter {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background-image: url(../images/filter.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.catalog-filter-price-inputs {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+
+}
+
+.catalog-filter-button-submit {
+  background-color: #82b3d3;
+}
+
+.catalog-filter-button-reset {
+  background-color: transparent;
+}
+
+.catalog-filter-results-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+.catalog-filter-results-select{
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.catalog-cards-item {
+  background-color: #ffffff;
+}
+.card-link{
+  text-decoration: none;
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+}
+
+.card-type-of-housing {
+  font-weight: 400;
+  color: #333333;
+}
+
+.card-price {
+  font-weight: 400;
+  color: #333333;
+}
+
+.button-blue {
+  background-color: #82b3d3;
+}
+
+.button-green {
+  background-color: #7db54f;
+}
+
+.catalog-cards-rating {
+  background-color: #f2f2f2;
+  color: #333333;
+
+}
+
+.pagination-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #82b3d3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-hidden {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.subscription-catalog {
+  background-color: transparent;
+  color: #000000;
+}
+
+.subscription-title-catalog {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.subscription-subtitle-catalog {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}

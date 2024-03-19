@@ -27,7 +27,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #000000;
 
 }
@@ -84,7 +84,13 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
+
 
 .page-header {
 
@@ -132,8 +138,16 @@ body {
 .advantages-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  text-align: center;
+
 
 }
+
 
 .advantages-item {
   width: 400px;
@@ -141,16 +155,22 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  box-sizing: border-box;
+  padding: 85px;
 }
 
 .advantages-item-dark-blue-photo-after-text {
   display: flex;
   text-align: center;
+  width: 1200px;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .advantages-item-dark-blue-photo-before-text {
   display: flex;
   text-align: center;
+  width: 1200px;
 }
 
 .advantages-item-no-photo {
@@ -158,12 +178,11 @@ body {
   text-align: center;
   flex-direction: row;
   justify-content: center;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 85px;
 }
-.advantages-item-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 .city-description-title {
   font-size: 30px;
@@ -186,15 +205,14 @@ body {
   text-transform: none;
 }
 
-.advantages-list {
-  text-align: center;
-}
 
 /* Title */
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
+
 }
 .advantages-description {
   color: #333333;
@@ -262,6 +280,8 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  box-sizing: border-box;
+padding: 85px;
 }
 
 .why-come-to-sedona-title {
@@ -290,9 +310,9 @@ body {
 .interested {
   width: 1200px;
   height: 406px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+box-sizing: border-box;
+text-align: center;
+padding: 96px 304px;
 }
 
 .interested-title {
@@ -401,6 +421,21 @@ body {
   text-decoration: none;
 }
 
+.catalog-filter-section {
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  justify-content: center;
+
+}
+
+.catalog-filter {
+
+  display: flex;
+  justify-content: center;
+}
+
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
@@ -429,6 +464,11 @@ body {
   background-color: transparent;
 }
 
+.catalog-filter-results{
+  display: flex;
+  box-sizing: border-box;
+  padding: 50px 70px 40px;
+}
 .catalog-filter-results-title {
   font-size: 30px;
   font-weight: 700;
@@ -443,9 +483,18 @@ body {
   line-height: 21px;
   font-weight: 400;
 }
+.catalog-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
 
 .catalog-cards-item {
   background-color: #ffffff;
+  width: 340px;
+
 }
 .card-link{
   text-decoration: none;
@@ -485,6 +534,16 @@ body {
 
 }
 
+.pagination {
+  display: flex;
+
+}
+
+.pagination-item {
+  box-sizing: border-box;
+  height: 60px;
+  width: 60px;
+}
 .pagination-link {
   font-size: 20px;
   font-weight: 700;
@@ -510,6 +569,11 @@ body {
 .subscription-catalog {
   background-color: transparent;
   color: #000000;
+  width: 1200px;
+  height: 414px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .subscription-title-catalog {
@@ -530,4 +594,29 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: none;
+}
+
+.main-footer {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.footer-social {
+  width: 142px;
+  margin-right: 42px;
+
+}
+
+.phone-number {
+  width: 720px;
+  margin-right: 42px;
+}
+
+.catalog-footer{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: center;
 }

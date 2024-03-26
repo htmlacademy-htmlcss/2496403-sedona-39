@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="images/favicon.svg">
   </head>
 
   <body>
     <div class="page-container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <div class="header">
           <nav class="header-logo-navigation">
 
@@ -60,7 +62,7 @@
 
         </div>
       </header>
-      <main class="main-catalog-filter main-container">
+      <main class="main-catalog-filter main-container" data-test="main">
         <div class="main-catalog-filter-background">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -69,7 +71,8 @@
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
 
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="breadcrumbs-icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
                       fill="white" />
@@ -82,12 +85,12 @@
               </li>
             </ul>
           </header>
-          <section class="catalog-filter-section">
+          <section class="catalog-filter-section" data-test="filter">
             <h2 class="visually-hidden">Фильтр</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="catalog-filter-fieldset-first">
                 <fieldset class="catalog-filter-group" title="Выберите необходимые пункты">
-                  <legend class="catalog-filter-title">Инфраструктура</legend>
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-list-item">
                       <label class="control">
@@ -113,7 +116,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group" title="Выберите тип жилья">
-                  <legend class="catalog-filter-title">Тип жилья</legend>
+                  <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-list-item">
                       <label class="control">
@@ -135,7 +138,7 @@
                         <input class="visually-hidden control-input" type="radio" name="type-of-housing"
                           value="apartments">
                         <span class="control-mark"></span>
-                        <span class="control-label">>Апартаменты</span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -181,236 +184,264 @@
 
           </section>
         </div>
-        <section class="catalog-filter-results">
-          <h2 class="catalog-filter-results-title">Найдено гостиниц: <span
-              class="catalog-filter-results-title-quantity">38</span></h2>
-          <div class="catalog-filter-results-select-wrap">
-            <select class="catalog-filter-results-select">
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-          </div>
-          <ul class="catalog-filter-results-view-buttons">
-            <li class="catalog-filter-results-view-item">
-              <a class="catalog-filter-results-button-item catalog-filter-results-button-item-selected" href="#">
-                <span class="visually-hidden">Показать плиткой</span>
+        <div class="test" data-test="catalog">
+          <section class="catalog-filter-results">
+            <h2 class="catalog-filter-results-title">Найдено гостиниц: <span
+                class="catalog-filter-results-title-quantity">38</span></h2>
+            <div class="catalog-filter-results-select-wrap">
+              <select class="catalog-filter-results-select">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+            </div>
+            <ul class="catalog-filter-results-view-buttons">
+              <li class="catalog-filter-results-view-item">
+                <a class="catalog-filter-results-button-item catalog-filter-results-button-item-selected" href="#">
+                  <span class="visually-hidden">Показать плиткой</span>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-                  <g fill="#000" clip-path="url(#a)">
-                    <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M0 0h16v14H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                    <g fill="#000" clip-path="url(#a)">
+                      <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="catalog-filter-results-view-item">
+                <a class="catalog-filter-results-button-item" href="#">
+                  <span class="visually-hidden">Показать карточки</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                    <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="catalog-filter-results-view-item">
+                <a class="catalog-filter-results-button-item" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+                    <g fill="#000" clip-path="url(#a)">
+                      <path
+                        d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="catalog-cards">
+            <h2 class="visually-hidden">Список отелей</h2>
+            <ul class="catalog-cards-list">
+              <li class="catalog-cards-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/hotel-1.jpg" width="300" height="212"
+                    alt="Фото отеля Amara Resort & Spa">
+                  <h3 class="card-title">Amara Resort & Spa</h3>
+                </a>
+                <div class="card-description">
+                  <p class="card-type-of-housing">Гостиница</p>
+                  <p class="card-price">От 4000 ₽</p>
+                  <p class="card-price-buttons">
+                    <a class="button button-brown" href="#">Подробнее</a>
+
+                  </p>
+                  <p class="card-price-buttons">
+                    <a class="button button-blue" href="#">В избранное</a>
+
+                  </p>
+                  <div class="catalog-card-rating">
+                    <p class="rating-star rating-star-four">
+                      <span class="visually-hidden">4 звезды</span>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+
+                    </p>
+                  </div>
+                  <p class="catalog-cards-rating">Рейтинг: 8,5</p>
+                </div>
+              </li>
+              <li class="catalog-cards-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/hotel-2.jpg" width="300" height="212"
+                    alt="Фото отеля Villas at Poco Diablo">
+                  <h3 class="card-title">Villas at Poco Diablo</h3>
+                </a>
+                <div class="card-description">
+                  <p class="card-type-of-housing">Гостиница</p>
+                  <p class="card-price">От 5000 ₽</p>
+                  <p class="card-price-buttons">
+                    <a class="button button-brown" href="#">Подробнее</a>
+
+                  </p>
+                  <p class="card-price-buttons">
+                    <a class="button button-green" href="#">В избранном</a>
+
+                  </p>
+                  <div class="catalog-card-rating">
+                    <p class="rating-star rating-star-four">
+                      <span class="visually-hidden">4 звезды</span>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+
+                    </p>
+                  </div>
+                  <p class="catalog-cards-rating">Рейтинг: 9,2</p>
+                </div>
+              </li>
+              <li class="catalog-cards-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/hotel-3.jpg" width="300" height="212"
+                    alt="Фото отеля Desert Quail Inn">
+                  <h3 class="card-title">Desert Quail Inn</h3>
+                </a>
+                <div class="card-description">
+                  <p class="card-type-of-housing">Гостиница</p>
+                  <p class="card-price">От 2500 ₽</p>
+                  <p class="card-price-buttons">
+                    <a class="button button-brown" href="#">Подробнее</a>
+
+                  </p>
+                  <p class="card-price-buttons">
+                    <a class="button button-blue" href="#">В избранное</a>
+
+                  </p>
+                  <div class="catalog-card-rating">
+                    <p class="rating-star rating-star-three">
+                      <span class="visually-hidden">3 звезды</span>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+
+
+                    </p>
+                  </div>
+                  <p class="catalog-cards-rating">Рейтинг: 6,9</p>
+                </div>
+              </li>
+              <li class="catalog-cards-item">
+                <a class="card-link" href="#">
+                  <img class="card-image" src="images/hotel-4.jpg" width="300" height="212"
+                    alt="Фото отеля GreenTree Inn">
+                  <h3 class="card-title">GreenTree Inn</h3>
+                </a>
+                <div class="card-description">
+                  <p class="card-type-of-housing">Гостиница</p>
+                  <p class="card-price">От 1500 ₽</p>
+                  <p class="card-price-buttons">
+                    <a class="button button-brown" href="#">Подробнее</a>
+
+                  </p>
+                  <p class="card-price-buttons">
+                    <a class="button button-blue" href="#">В избранное</a>
+
+                  </p>
+                  <div class="catalog-card-rating">
+                    <p class="rating-star rating-star-two">
+                      <span class="visually-hidden">2 звезды</span>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+                      <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17"
+                        viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z"
+                          fill="#83B3D3" />
+                      </svg>
+
+
+                    </p>
+                  </div>
+                  <p class="catalog-cards-rating">Рейтинг: 5,0</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-hidden" href="#">
+                ...
               </a>
             </li>
-            <li class="catalog-filter-results-view-item">
-              <a class="catalog-filter-results-button-item" href="#">
-                <span class="visually-hidden">Показать карточки</span>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-                  <path fill="#000" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-                </svg>
-              </a>
-            </li>
-            <li class="catalog-filter-results-view-item">
-              <a class="catalog-filter-results-button-item" href="#">
-                <span class="visually-hidden">Показать списком</span>
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-                  <g fill="#000" clip-path="url(#a)">
-                    <path
-                      d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M0 0h16v14H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-        </section>
-        <section class="catalog-cards">
-          <h2 class="visually-hidden">Список отелей</h2>
-          <ul class="catalog-cards-list">
-            <li class="catalog-cards-item">
-              <a class="card-link" href="#">
-                <img class="card-image" src="images/hotel-1.jpg" width="300" height="212"
-                  alt="Фото отеля Amara Resort & Spa">
-                <h3 class="card-title">Amara Resort & Spa</h3>
-              </a>
-              <div class="card-description">
-                <p class="card-type-of-housing">Гостиница</p>
-                <p class="card-price">От 4000 ₽</p>
-                <p class="card-price-buttons">
-                  <a class="button button-brown" href="#">Подробнее</a>
+        </div>
 
-                </p>
-                <p class="card-price-buttons">
-                  <a class="button button-blue" href="#">В избранное</a>
-
-                </p>
-                <div class="catalog-card-rating">
-                  <p class="rating-star rating-star-four">
-                    <span class="visually-hidden">4 звезды</span>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-
-                  </p>
-                </div>
-                <p class="catalog-cards-rating">Рейтинг: 8,5</p>
-              </div>
-            </li>
-            <li class="catalog-cards-item">
-              <a class="card-link" href="#">
-                <img class="card-image" src="images/hotel-2.jpg" width="300" height="212"
-                  alt="Фото отеля Villas at Poco Diablo">
-                <h3 class="card-title">Villas at Poco Diablo</h3>
-              </a>
-              <div class="card-description">
-                <p class="card-type-of-housing">Гостиница</p>
-                <p class="card-price">От 5000 ₽</p>
-                <p class="card-price-buttons">
-                  <a class="button button-brown" href="#">Подробнее</a>
-
-                </p>
-                <p class="card-price-buttons">
-                  <a class="button button-green" href="#">В избранном</a>
-
-                </p>
-                <div class="catalog-card-rating">
-                  <p class="rating-star rating-star-four">
-                    <span class="visually-hidden">4 звезды</span>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-
-                  </p>
-                </div>
-                <p class="catalog-cards-rating">Рейтинг: 9,2</p>
-              </div>
-            </li>
-            <li class="catalog-cards-item">
-              <a class="card-link" href="#">
-                <img class="card-image" src="images/hotel-3.jpg" width="300" height="212"
-                  alt="Фото отеля Desert Quail Inn">
-                <h3 class="card-title">Desert Quail Inn</h3>
-              </a>
-              <div class="card-description">
-                <p class="card-type-of-housing">Гостиница</p>
-                <p class="card-price">От 2500 ₽</p>
-                <p class="card-price-buttons">
-                  <a class="button button-brown" href="#">Подробнее</a>
-
-                </p>
-                <p class="card-price-buttons">
-                  <a class="button button-blue" href="#">В избранное</a>
-
-                </p>
-                <div class="catalog-card-rating">
-                  <p class="rating-star rating-star-three">
-                    <span class="visually-hidden">3 звезды</span>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-
-
-                  </p>
-                </div>
-                <p class="catalog-cards-rating">Рейтинг: 6,9</p>
-              </div>
-            </li>
-            <li class="catalog-cards-item">
-              <a class="card-link" href="#">
-                <img class="card-image" src="images/hotel-4.jpg" width="300" height="212"
-                  alt="Фото отеля GreenTree Inn">
-                <h3 class="card-title">GreenTree Inn</h3>
-              </a>
-              <div class="card-description">
-                <p class="card-type-of-housing">Гостиница</p>
-                <p class="card-price">От 1500 ₽</p>
-                <p class="card-price-buttons">
-                  <a class="button button-brown" href="#">Подробнее</a>
-
-                </p>
-                <p class="card-price-buttons">
-                  <a class="button button-blue" href="#">В избранное</a>
-
-                </p>
-                <div class="catalog-card-rating">
-                  <p class="rating-star rating-star-two">
-                    <span class="visually-hidden">2 звезды</span>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-                    <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3" />
-                    </svg>
-
-
-                  </p>
-                </div>
-                <p class="catalog-cards-rating">Рейтинг: 5,0</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-hidden" href="#">
-              ...
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -424,7 +455,7 @@
           </form>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <section class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-list-item">

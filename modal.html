@@ -66,19 +66,16 @@
       <main class="main-container main-index" data-test="main">
 
         <h1 class="visually-hidden">Город Седона</h1>
-        <section class="advantages">
-          <div class="test" data-test="hero">
-            <div class="main-header-logo-background">
-              <img class="logo-main" src="images/welcome.svg" width="458" height="352"
-                alt="Welcome to tho gorgeous Sedona Because the Grand Canyon sucks!">
-            </div>
-            <div class="text-after-logo">
-              <h2 class="city-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-              <p class="city-description-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-            </div>
+        <section class="advantages" data-test="advantages">
+          <div class="main-header-logo-background">
+            <img class="logo-main" src="images/welcome.svg" width="458" height="352"
+              alt="Welcome to tho gorgeous Sedona Because the Grand Canyon sucks!">
           </div>
-
-          <ul class="advantages-list" data-test="advantages">
+          <div class="text-after-logo">
+            <h2 class="city-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="city-description-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+          <ul class="advantages-list">
             <li class="advantages-item-dark-blue-photo-after-text">
               <div class="advantages-item-text promo-dark">
                 <h3 class="advantages-title advantages-title-promo ">Настоящий городок</h3>
@@ -95,14 +92,13 @@
             </li>
             <li class="advantages-item advantages-item-medium-blue">
 
-              <h3 class="advantages-title advantages-title-promo">Красивая<br> дорога</h3>
-              </h3>
+              <h3 class="advantages-title advantages-title-promo">Красивая дорога</h3>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 
             </li>
             <li class="advantages-item advantages-item-light-blue">
 
-              <h3 class="advantages-title advantages-title-promo">Мало<br> туристов</h3>
+              <h3 class="advantages-title advantages-title-promo">Мало туристов</h3>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
 
             </li>
@@ -111,14 +107,14 @@
 
               <img src="images/devils-bridge.jpg" width="800" height="385" alt="Фото моста дьявола">
               <div class="advantages-item-text promo-dark">
-                <h3 class="advantages-title advantages-title-promo">Там есть мост&nbsp;дьявола</h3>
+                <h3 class="advantages-title advantages-title-promo">Там есть мост дьявола</h3>
                 <p class="advantages-description-photo">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
           </ul>
         </section>
 
-        <section class="why-come-to-sedona" data-test="service">
+        <section class="why-come-to-sedona" data-test="search">
           <div class="text-why-come-to-sedona">
             <h2 class="welcome-to-sedona-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="welcome-to-sedona-subtitle">Опытный персонал и качественное обслуживание!</p>
@@ -136,12 +132,11 @@
             </li>
             <li class="why-come-to-sedona-item why-come-to-sedona-item-light-blue advantage-icon-souvenirs">
               <h3 class="why-come-to-sedona-title">Сувениры</h3>
-              <p class="why-come-to-sedona-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного
-                производства!</p>
+              <p class="why-come-to-sedona-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
-        <section class="interested" data-test="search">
+        <section class="interested" data-test="subscribe">
           <h2 class="interested-title">Заинтересовались?</h2>
           <p class="interested-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
@@ -149,7 +144,7 @@
         </section>
         <section class="subscription subscription-main">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-subtitle">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
+          <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscription-form-label" for="email">
               <span class="visually-hidden">Ваш e-mail</span>
@@ -162,7 +157,7 @@
         </section>
 
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <section class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-list-item">
@@ -188,8 +183,7 @@
               </a>
             </li>
             <li class="footer-social-list-item">
-              <a class="footer-social-link footer-social-list-youtube"
-                href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-link footer-social-list-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
 
                 <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
@@ -202,17 +196,12 @@
         </section>
         <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-
-          <svg class="htmlacademy-logo" aria-hidden="true" role="img" aria-label="Логотип HTML Академия."
-            xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none">
-            <path fill="#000"
-              d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
-          </svg>
+          <img class="htmlacademy-logo" src="images/html-logo.svg" width="115" height="33" alt="Логотип HTML Академии">
         </a>
       </footer>
     </div>
-    <div class="modal-container modal-container-hide">
-      <div class="modal modal-authentication" data-test="modal">
+    <div class="modal-container">
+      <div class="modal modal-authentication"  data-test="modal">
         <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
@@ -262,8 +251,8 @@
                   <span class="modal-info tooltip">
                     <button class="tooltip-toggler" type="button" aria-labelledby="tooltip-label-kids">
                       <span class="visually-hidden">Подсказка.</span>
-                      <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                      <svg class="tooltip-icon" width="3" height="12"
+                        viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z"
                           fill="#FFFFFF" />
                       </svg>
@@ -297,8 +286,7 @@
         </section>
       </div>
     </div>
-    </div>
-
+  </div>
 
   </body>
 

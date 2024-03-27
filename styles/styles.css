@@ -1203,15 +1203,29 @@ img {
   align-items: center;
 }
 
+.catalog-tile-view {
+  background-image: url("../images/view-icon.svg");
+}
+
+.catalog-card-view {
+  background-image: url("../images/view-icon-2.svg");
+}
+
+.catalog-list-view {
+  background-image: url("../images/view-icon-3.svg");
+}
+
 .catalog-filter-results-button-item {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 48px;
   height: 48px;
-  padding: 12px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 17px 16px;
 }
 
 .catalog-filter-results-button-item:hover {

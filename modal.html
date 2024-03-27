@@ -15,7 +15,7 @@
       <div class="header">
         <nav class="header-logo-navigation">
           <a class="navigation-link-logo" href="index.html">
-            <img class="main-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип проекта Седона">
+            <img class="main-header-logo" src="images/logo.svg" width="140" height="70" alt="Логтип проекта Седона">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -56,18 +56,16 @@
     </header>
     <main class="main-container main-index" data-test="main">
       <h1 class="visually-hidden">Город Седона</h1>
-      <section class="advantages">
-        <div class="test" data-test="hero">
-          <div class="main-header-logo-background">
-            <img class="logo-main" src="images/welcome.svg" width="458" height="352"
-              alt="Welcome to tho gorgeous Sedona Because the Grand Canyon sucks!">
-          </div>
-          <div class="text-after-logo">
-            <h2 class="city-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="city-description-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          </div>
+      <section class="advantages" data-test="advantages">
+        <div class="main-header-logo-background">
+          <img class="logo-main" src="images/welcome.svg" width="458" height="352"
+            alt="Welcome to tho gorgeous Sedona Because the Grand Canyon sucks!">
         </div>
-        <ul class="advantages-list" data-test="advantages">
+        <div class="text-after-logo">
+          <h2 class="city-description-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="city-description-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="advantages-list">
           <li class="advantages-item-dark-blue-photo-after-text">
             <div class="advantages-item-text promo-dark">
               <h3 class="advantages-title advantages-title-promo ">Настоящий городок</h3>
@@ -80,23 +78,23 @@
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item advantages-item-medium-blue">
-            <h3 class="advantages-title advantages-title-promo">Красивая<br> дорога</h3>
+            <h3 class="advantages-title advantages-title-promo">Красивая дорога</h3>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item advantages-item-light-blue">
-            <h3 class="advantages-title advantages-title-promo">Мало<br> туристов</h3>
+            <h3 class="advantages-title advantages-title-promo">Мало туристов</h3>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item-dark-blue-photo-before-text">
             <img src="images/devils-bridge.jpg" width="800" height="385" alt="Фото моста дьявола">
             <div class="advantages-item-text promo-dark">
-              <h3 class="advantages-title advantages-title-promo">Там есть мост&nbsp;дьявола</h3>
+              <h3 class="advantages-title advantages-title-promo">Там есть мост дьявола</h3>
               <p class="advantages-description-photo">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="why-come-to-sedona" data-test="service">
+      <section class="why-come-to-sedona" data-test="search">
         <div class="text-why-come-to-sedona">
           <h2 class="welcome-to-sedona-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="welcome-to-sedona-subtitle">Опытный персонал и качественное обслуживание!</p>
@@ -114,12 +112,11 @@
           </li>
           <li class="why-come-to-sedona-item why-come-to-sedona-item-light-blue advantage-icon-souvenirs">
             <h3 class="why-come-to-sedona-title">Сувениры</h3>
-            <p class="why-come-to-sedona-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного
-              производства!</p>
+            <p class="why-come-to-sedona-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
-      <section class="interested" data-test="search">
+      <section class="interested" data-test="subscribe">
         <h2 class="interested-title">Заинтересовались?</h2>
         <p class="interested-subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
@@ -127,7 +124,7 @@
       </section>
       <section class="subscription subscription-main">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscription-subtitle">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
+        <p class="subscription-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscription-form-label" for="email">
             <span class="visually-hidden">Ваш e-mail</span>
@@ -138,7 +135,7 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer" data-test="footer">
+    <footer class="main-footer">
       <ul class="footer-social-list">
         <li class="footer-social-list-item">
           <a class="footer-social-link footer-social-list-vk" href="https://vk.com/htmlacademy">
@@ -179,7 +176,7 @@
       </a>
     </footer>
   </div>
-  <div class="modal-container modal-container-hide">
+  <div class="modal-container">
     <div class="modal modal-authentication" data-test="modal">
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -230,9 +227,9 @@
                 <span class="modal-info tooltip">
                   <button class="tooltip-toggler" type="button" aria-labelledby="tooltip-label-kids">
                     <span class="visually-hidden">Подсказка.</span>
-                    <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" fill="#FFFFFF"
+                    <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M.4 0h2v2h-2V0Zm2 12h-2V3h2v9Z" fill="#FFFFFF" />
                     </svg>
                   </button>
                   <span class="tooltip-content" role="tooltip" id="tooltip-label-kids">Укажите количество детей,
